@@ -1,0 +1,54 @@
+[
+	{
+		"name": "ping",
+		"description": "Get the bot latency",
+		"syntax": "ping",
+		"examples": [
+			"ping"
+		]
+	},
+	{
+		"name": "eval",
+		"description": "Runs a script `Owner Only`",
+		"syntax": "eval",
+		"examples": [
+			"eval client.ping"
+		]
+	},
+	{
+		"name": "botinfo",
+		"description": "Get bot information",
+		"syntax": "botinfo",
+		"examples": [
+			"botinfo"
+		]
+	},
+	{
+		"name": "prefix",
+		"description": "Changes/Shows the guild prefix",
+		"syntax": "prefix",
+		"examples": [
+			"prefix",
+			"prefix !!"
+		]
+	},
+	{
+		"name": "translator",
+		"description": "Modify/Add/Remove a channel for the bot to start translating messages that are not of the language configured on the channel",
+		"syntax": "translator <(a)dd|(r)emove|(m)odify> <channel-name> [language]",
+		"examples": [
+			"translator add general english",
+			"translator modify general russian",
+			"translator remove general"
+		]
+	},
+	{
+		"name": "help",
+		"description": "Shows the help list or a command help.",
+		"syntax": "help",
+		"examples": [
+			"help",
+			"help translator"
+		]
+	}
+]
