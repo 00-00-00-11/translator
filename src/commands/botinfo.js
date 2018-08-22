@@ -3,7 +3,7 @@ const Utils         = require('../../utils/utils.js');
 
 exports.run = (client, msg, args) => {
 	let links = [
-		{name: 'Invite Me', urls: 'https://discordapp.com/oauth2/authorize?client_id=481804466509840392&scope=bot'}
+		{name: 'Invite Me', url: 'https://discordapp.com/oauth2/authorize?client_id=481804466509840392&scope=bot'}
 	];
 
 	let linksText = links.map(link => `[${link.name}](${link.url})`);
@@ -11,7 +11,7 @@ exports.run = (client, msg, args) => {
 	msg.channel.send({embed:
 		new RichEmbed()
 			.setAuthor('Translator Info', client.user.avatarURL)
-			.setColor(0x800020)
+			.setColor(0xffde17)
 			.setThumbnail(client.user.avatarURL)
 			.addField(':gear: Version', client.config.version, true)
 			.addField(':books: Library', 'Discord.js', true)

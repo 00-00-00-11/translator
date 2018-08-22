@@ -22,7 +22,7 @@ exports.run = (client, msg, args) => {
 		if (!language) return msg.channel.send(client.normalEmbed(':exclamation: Language not found!'));
 
 		let channels = guild.channels;
-		channels.push({id: channel.id, languageCode: language.alpha2});
+		channels.push({id: channel.id, languageCode: language.alpha2.length > 0 ? language.alpha2 : language.alpha3, language: language.name.toLowerCase()});
 
 		client.guildsConfig.setProp(msg.guild.id, channels, 'channels');
 
@@ -57,7 +57,7 @@ exports.run = (client, msg, args) => {
 
 		let channels = guild.channels;
 		let channelIndex = guild.channels.indexOf(guild.channels.find(channelConfig => channelConfig.id == channel.id));
-		channels[channelIndex] = {id: channel.id, languageCode: language.alpha2};
+		channels[channelIndex] = {id: channel.id, languageCode: language.alpha2.length > 0 ? language.alpha2 : language.alpha3, language: language.name.toLowerCase()};
 
 		client.guildsConfig.setProp(msg.guild.id, channels, 'channels');
 
