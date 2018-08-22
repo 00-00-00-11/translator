@@ -11,7 +11,7 @@ exports.run = (client, msg, args) => {
 	msg.channel.send({embed:
 		new RichEmbed()
 			.setAuthor('Translator Info', client.user.avatarURL)
-			.setColor(0x800020)
+			.setColor(0xffde17)
 			.setThumbnail(client.user.avatarURL)
 			.addField(':gear: Version', client.config.version, true)
 			.addField(':books: Library', 'Discord.js', true)
