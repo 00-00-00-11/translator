@@ -3,7 +3,7 @@ const Utils         = require('../../utils/utils.js');
 
 exports.run = (client, msg, args) => {
 	let links = [
-		{name: 'Invite Me', urls: 'https://discordapp.com/oauth2/authorize?client_id=481804466509840392&scope=bot'}
+		{name: 'Invite Me', url: 'https://discordapp.com/oauth2/authorize?client_id=481804466509840392&scope=bot'}
 	];
 
 	let linksText = links.map(link => `[${link.name}](${link.url})`);
